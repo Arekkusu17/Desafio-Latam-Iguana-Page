@@ -1,0 +1,38 @@
+body {
+  font-family: "Raleway", sans-serif;
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 1rem;
+}
+
+h1 {
+  text-align: center;
+  letter-spacing: 10px;
+}
+
+.iguana-header {
+  width: 100%;
+}
+
+.section-page {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+  gap: 1.2rem;
+}
+
+.description {
+  text-align: justify;
+  width: 49%;
+}
+
+.section-img {
+  width: 400px;
+}
+
+.gallery-img {
+  width: 315px;
+  height: 202px;
+}
