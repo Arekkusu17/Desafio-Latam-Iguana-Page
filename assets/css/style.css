@@ -2,12 +2,13 @@ body {
   font-family: "Raleway", sans-serif;
   background-color: #000000;
   color: #ffffff;
-  font-size: 1rem;
+  font-size: 16px;
 }
 
-h1 {
+.main-title {
   text-align: center;
-  letter-spacing: 10px;
+  font-size: 50px;
+  letter-spacing: 18px;
 }
 
 .iguana-header {
@@ -16,23 +17,115 @@ h1 {
 
 .section-page {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   padding: 3rem;
-  gap: 1.2rem;
+  gap: 1.5rem;
 }
 
 .description {
-  text-align: justify;
-  width: 49%;
+  text-align: left;
+  font-size: 16px;
+  width: 50%;
+  font-weight: 300;
 }
 
 .section-img {
   width: 400px;
 }
 
+.section-characteristic {
+  background-color: #1e1a13;
+  flex-direction: column;
+  font-size: 40px;
+}
+
+.characteristic-container {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 60%;
+  font-size: 24px;
+}
+
+/* Gallery */
+.section-gallery {
+  margin: 0 3rem;
+}
+
 .gallery-img {
   width: 315px;
   height: 202px;
+}
+
+/* Footer */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  background-color: #1e1a13;
+  font-size: 20px;
+}
+
+.footer a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer a:visited {
+  color: rgb(175, 158, 127);
+}
+
+/* RESPONSIVE DESIGN */
+
+@media only screen and (max-width: 875px) {
+  .description {
+    font-size: 0.8rem;
+  }
+
+  .section-characteristic {
+    font-size: 20px;
+  }
+
+  .characteristic-container {
+    gap: 5rem;
+  }
+
+  .section-gallery {
+    flex-wrap: wrap;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  iguana-header {
+    width: 100%;
+  }
+
+  .section-description {
+    flex-wrap: wrap;
+    width: 80%;
+  }
+  .description {
+    width: 100%;
+    font-size: 14px;
+  }
+  .section-img {
+    width: 350px;
+  }
+
+  .section-characteristic {
+    font-size: 16px;
+  }
+
+  .characteristic-container {
+    gap: 2rem;
+  }
+
+  .footer {
+    font-size: 18px;
+    display: inline-block;
+  }
 }
